@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 9999999;
+    background-color: #0A121f;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.navs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.nav_center ul li {
+    display: inline-block;
+    font-size: 16px;
+    padding-right: 20px;
+}
+
+
+.btn_ {
+    background-color: #3A68B8;
+    border-radius: 5px;
+    padding: 15px 30px;
+}
+
+/* finished nav */
+
+
+header {
+    background-color: #08101e;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.col {
+    padding: 4%;
+}
+
+.col img.header_main {
+    width: 100%;
+}
+
+.header_span {
+    color: #3A68B8;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 160%;
+}
+
+.header_h2 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 130%;
+}
+
+.header_p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 160%;
+    opacity: 0.7;
+    padding: 10% 0;
+}
+.col a{
+    text-decoration: none;
+}
+
+.logos{
+    background-color: #08101e;
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* main */
+
+
+
+footer{
+    background-color: #0A121f;
+}
+
+.footer_ul li{
+    line-height: 50px;
+}
+
+.footer_ul li{
+    list-style-type: none;
+}
+
+.footer_titles{
+    font-size: 16px;
+    padding: 20px 0;
+}
+.footer_grey li{
+    list-style: none;
+}
+.footer_grey, .footer_grey li a{
+    color: #9c9fa5;
+    font-size: 14px;
+}
+
+.footer_social{
+    padding: 5% 0;
+}
+
+.footer_lang{
+    background-color: transparent;
+    border: none;
+}
+
+.footer_grey li{
+    line-height: 30px;
+}
+
+i{
+    padding: 10px;
+}
+
+/* carousel */
+
+.caro_items{
+    background-color: #0f1624;
+    padding: 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.owl-carousel{
+    display: flex;
+    justify-content: center;
+}
+
+.owl-nav{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+/* carousel */
+
+.nav_menu{
+    background-color: #3A68B8;
+    border: 2px solid #02122c;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* responsive css */
+
+@media screen and (max-width: 767px) {
+    .nav_center, .nav_left img, .nav_right a{
+        display: none;
+    }
+    .nav_right .nav_menu{
+        display: block!important;
+    }
+    .nav_center{
+        position: absolute;
+        top: 100px;
+        text-align: center;
+        left: 0;
+        width: 100%;
+    }
+    .nav_center ul{
+        background-color: #02122c;
+        width: 100%;
+    }
+    .nav_center ul li{
+        padding: 10px;
+        display: block;
+    }
+    .nav_center ul li:hover{
+        background-color: #01060e42;
+    }
+
+    .nav_center.active{
+        display: flex;
+    }
+    .row{
+        display: block;
+    }
+    .logos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logos img{
+        padding: 5%;
+    }
+    .header_main{
+        width: 100%;
+    }
+
+   
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+    .nav_center, .nav_right a{
+        display: none;
+    }
+    .nav_right .nav_menu{
+        display: block!important;
+    }
+    .nav_center{
+        position: absolute;
+        top: 100px;
+        text-align: center;
+        left: 0;
+        width: 100%;
+    }
+    .nav_center ul{
+        background-color: #02122c;
+        width: 100%;
+    }
+    .nav_center ul li{
+        padding: 10px;
+        display: block;
+    }
+    .nav_center ul li:hover{
+        background-color: #01060e42;
+    }
+
+    .nav_center.active{
+        display: flex;
+    }
+
+    .row{
+        display: block;
+    }
+    .logos{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+   
+}
+
+@media screen and (min-width: 1024px){
+
+}
+
+
+/* responsive css */
